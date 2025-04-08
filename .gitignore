@@ -5,6 +5,4 @@ __pycache__/
 
 .env
 
-config.py
-
 .vscode/
