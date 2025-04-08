@@ -21,7 +21,7 @@ http://18.210.29.145/
 ###  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript, Google Maps Platform, Google Charts
-- **Backend**: Python, Flask, SQLAlchemy, Flask-CORS
+- **Backend**: Python, Flask, SQLAlchemy
 - **Database**: AWS RDS (MySQL)
 - **Scrapers**: Python scripts for live data collection from JCDecaux and OpenWeatherMap APIs
 - **Machine Learning**: Station-specific Linear Regression models trained with collected data
@@ -50,7 +50,7 @@ dbbikes/
 
 ### Key Features
 
-**● Displaying all the bike stations in Dublin**
+#### **● Displaying all the bike stations in Dublin**
 
 Upon loading the website, all Dublin bike stations are displayed on the map, providing users with a clear overview of their distribution. Clicking on a station marker reveals an info box with key details, including station name and number, status, total capacity, real-time bike and stand availability, credit card support.
 
@@ -60,7 +60,7 @@ Upon loading the website, all Dublin bike stations are displayed on the map, pro
 
 
 
-● **Machine Learning Prediction feature for Bikes and Stands**
+#### ● **Machine Learning Prediction feature for Bikes and Stands**
 
 When users click the “ML Availability Prediction” button on a selected station, the system displays bar charts forecasting the number of available bikes and stands over the next four days, helping users plan future trips.
 
@@ -68,7 +68,7 @@ When users click the “ML Availability Prediction” button on a selected stati
 
 
 
-**● Weather forecast feature**
+#### **● Weather forecast feature**
 
 The top-left widget displays current weather conditions. Clicking it reveals 24-hour forecast charts for temperature and wind speed.
 
@@ -76,7 +76,7 @@ The top-left widget displays current weather conditions. Clicking it reveals 24-
 
 
 
-**● Real-Time Bike & Stand Distribution**
+#### **● Real-Time Bike & Stand Distribution**
 
 Users can toggle between "Bikes Avail" and "Stands Avail" views to display the real-time availability of bikes or bike stands across all stations. Availability is represented by colored circles on the map, where size indicates quantity and color reflects availability levels. A legend in the top-left corner provides reference.
 
@@ -86,11 +86,13 @@ Users can toggle between "Bikes Avail" and "Stands Avail" views to display the r
 
 
 
-**● Route Planning Between Stations**
+#### **● Route Planning Between Stations**
 
 Users can select any two bike stations — one as the departure point and one as the destination — to generate a suggested cycling route between them. 
 
 ![route](app/static/img/readmepic/route.png)
+
+------
 
 ### Personal Contributions
 
