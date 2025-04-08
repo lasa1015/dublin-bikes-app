@@ -1,6 +1,6 @@
-### Dublin Bikes Mapper – Smart Bike Monitoring & Prediction Platform
+## Dublin Bikes Mapper – Smart Bike Monitoring & Prediction Platform
 
-#### Project Overview
+### Project Overview
 
 This project presents a comprehensive web-based system designed for Dublin’s public bike-sharing network. It integrates real-time data from bike stations, weather and air quality APIs, and applies machine learning models to forecast future bike availability. 
 
@@ -10,7 +10,7 @@ This project was initially developed through a team collaboration and later inde
 
 ---
 
-#### Website
+### Website
 
 [https://dublinbikes.site](https://dublinbikes.site)
 
@@ -18,7 +18,7 @@ http://18.210.29.145/
 
 ---
 
-####  Tech Stack
+###  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript, Google Maps Platform, Google Charts
 - **Backend**: Python, Flask, SQLAlchemy, Flask-CORS
@@ -27,7 +27,7 @@ http://18.210.29.145/
 - **Machine Learning**: Station-specific Linear Regression models trained with collected data
 - **Deployment**: AWS EC2, Nginx
 
-####  Project Structure
+###  Project Structure
 
 ```
 dbbikes/
@@ -48,7 +48,7 @@ dbbikes/
 
 ---
 
-#### Key Features
+### Key Features
 
 **● Displaying all the bike stations in Dublin**
 
@@ -92,11 +92,11 @@ Users can select any two bike stations — one as the departure point and one as
 
 ![route](app/static/img/readmepic/route.png)
 
-#### Personal Contributions
+### Personal Contributions
 
 This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system. . 
 
-#### - Initial Contribution (Team Phase)
+#### Initial Contribution (Team Phase)
 
 As a core contributor, I was responsible for the following areas:
 
@@ -107,7 +107,7 @@ As a core contributor, I was responsible for the following areas:
 
 - **Deployment & Background Services**: I deployed the application to an AWS EC2 instance and configured background services to ensure continuous data scraping and system uptime.
 
-#### - Independent Extension (Post-Project)
+#### Independent Extension (Post-Project)
 
 Following the completion and decommissioning of the initial group project, I independently revived, refined, and redeployed the system. My post-project contributions include:
 
