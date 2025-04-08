@@ -12,7 +12,7 @@ This project was initially developed through a team collaboration and later inde
 
 ### Website
 
-[https://dublinbikes.site](https://dublinbikes.site)
+[http://dublinbikes.site](http://dublinbikes.site)
 
 http://18.210.29.145/
 
