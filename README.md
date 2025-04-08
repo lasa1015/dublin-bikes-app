@@ -27,6 +27,8 @@ http://18.210.29.145/
 - **Machine Learning**: Station-specific Linear Regression models trained with collected data
 - **Deployment**: AWS EC2, Nginx
 
+---
+
 ###  Project Structure
 
 ```
@@ -102,7 +104,8 @@ This project was initially developed by a team of three—Sha Luo, Yanwen Yu, an
 
 As a core contributor, I was responsible for the following areas:
 
-- **Website Design**: I designed a large portion of the site’s visual theme, including the color palette, logo, background images, and custom station marker icons.
+- **Website Design**: I was responsible for designing the visual theme of the site, including the color palette, logo, background imagery, and custom station marker icons.
+
 - **Front-End Development**: I implemented most of the front-end functionality using HTML, CSS, and JavaScript. Key features include: weather widgets and multi-day forecasts, map display, user geolocation, nearest station detection, route planning, and a heatmap visualization of bike and stand availability.
 
 - **Back-End Development**:  I developed two scrapers for collecting air quality and weather forecast data, and designed the corresponding RDS table schemas. I used pre-trained machine learning models to generate predictions of bike and stand availability, and structured a dedicated table to store the outputs.
