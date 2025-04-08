@@ -3,14 +3,12 @@ from sqlalchemy import create_engine, text
 import traceback
 import functools
 from config import Config
-from flask_cors import CORS
 from flask import request, jsonify
 from werkzeug.middleware.proxy_fix import ProxyFix
 import json
 
 
 app = Flask(__name__, static_url_path='/static')
-CORS(app)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1)  
 app.config.from_object(Config)
 
