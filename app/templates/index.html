@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dublin Bikes Mapper</title>
+
+  <!-- CSS file link , the url is /static/css/style.css-->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- link of Google chart -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <!--  hide console log -->
+  <script>
+    console.log = function () { };
+    console.error = function () { };
+    console.warn = function () { };
+    console.info = function () { };
+  </script>
+
+</head>
+
+<body>
+
+  <!----------------------------------------- Header area ------------------------------------>
+
+  <div id="header">
+    <img src="../static/img/typeface.png" alt="logo">
+  </div>
+
+
+
+  <!--------------------------------------- Weather area ------------------------------------>
+  <div id="weather">
+
+    <div id="weather_temp">
+    </div>
+    <div id="weather_pic"></div>
+    <div id="weather_content">
+    </div>
+  </div>
+
+
+  <!----------------------------------- Weather forecast area --------------------------->
+
+  <div id="weather_more">
+    <div id=close_weather class="close">×</div>
+    <div id="weather_condition"></div>
+    <div id="weather_temperature"></div>
+    <div id="weather_wind"></div>
+  </div>
+
+
+  <!--------------------------------------- Map area ------------------------------------->
+
+  <div id="map">
+    <gmp-map center="53.349876403808594,-6.260734558105469" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="53.349876403808594,-6.260734558105469" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </div>
+
+
+
+
+  <!-------------------------------------- Prediction area ---------------------------->
+  <div id="prediction">
+    <div>
+
+      <select id="dateSelect"></select>
+
+      <button id="prediction_btn" onclick="fetchStationPredictions()">get prediction results</button>
+    </div>
+
+    <div id="prediction_chart">
+
+      <div id=close_prediction class="close">×</div>
+
+
+      <div id="prediction_bike" class="prdiciton_b_s">
+      </div>
+
+
+      <div id="prediction_stand" class="prdiciton_b_s">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------------------------Buttons for availability circles ---------------------------->
+  <div id="circle_symbol">
+    <div class="row">
+      <div class="symbol" id="symbol_green"></div>
+      <p>n > 15</p>
+    </div>
+    <div class="row">
+      <div class="symbol" id="symbol_yellow"></div>
+      <p> n >7</p>
+    </div>
+    <div class="row">
+      <div class="symbol" id="symbol_red"></div>
+      <p> n > 1</p>
+    </div>
+    <div class="row">
+      <div class="symbol" id="symbol_black"></div>
+      <p>n = 0</p>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="circle">
+    <button id="button_bikes" type="button">Bikes Avail</button>
+    <button id="button_stands" type="button">Stands Avail</button>
+
+  </div>
+
+
+  <!---------------------------------- Journey Planner Area ----------------------------------------->
+  <div id="journey_planner">
+    <img id="title" src="../static/img/title.png" alt="logo">
+
+
+    <div>
+      <form>
+        <div>
+
+          <div id="current_location">
+            <img id="target" src="../static/img/target.png" alt="logo">
+            <button id="target_btn" type="button">use your current location</button>
+          </div>
+          <div id="search">
+
+            <input type="text" id="location" name="from" placeholder="enter your target location">
+            <button id="search_location" type="button">Search</button>
+
+          </div>
+
+
+        </div>
+        <div id="button_area">
+          <button id="serach_for_bike" type="button">nearest bike</button>
+          <button id="serach_for_stand" type="button">nearest stand</button>
+
+          <button id="set_as_start" type="button">set as departure</button>
+          <button id="set_as_end" type="button">set as arrival</button>
+
+        </div>
+
+
+        <label for="from" class="depart_arrival">DEPARTURE STATION</label>
+
+        <select name="from" id="from">
+
+        </select>
+
+        <label for="to" class="depart_arrival">ARRIVAL STATION</label>
+
+        <select name="TO" id="to">
+
+        </select>
+
+        <button id="submit" type="button">GO</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <!------------------------------------------- Notice div ----------------------------------->
+
+  <div id="notice">
+    <div>
+      <p id="notice_text"></p>
+      <button id="notice_btn">OK</button>
+    </div>
+  </div>
+
+
+
+  <!-- Link of script.js file -->
+  <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>

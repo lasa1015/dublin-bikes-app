@@ -1,0 +1,550 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* close button */
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  font-size: 24px;
+  /* background-color: rgb(49, 181, 179); */
+  color: rgb(64, 64, 64);
+  border: none;
+  padding: 0px 6px;
+}
+
+/* .close:hover {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+} */
+
+/* Header */
+
+#header {
+  background-image: url("../img/bg.jpg");
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#header img {
+  width: 380px;
+}
+
+/* MAP */
+
+#map {
+  height: calc(100% - 70px);
+  width: 100%;
+  background-color: rgb(49, 181, 179);
+}
+
+/* Weather */
+
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  height: 60px;
+  width: 300px;
+  background: rgb(255, 255, 255);
+  color: #444444;
+  padding: 0px;
+  /* text-align: center; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  /* cursor: pointer; */
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+#weather img {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#temp {
+  font-size: 34px;
+  margin-left: 10px;
+  color: #686868;
+}
+
+#weather_content {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+/* #weather:hover {
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.6);
+} */
+
+#weather_more {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  width: 390px;
+  height: 500px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  z-index: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#avail_prediction {
+  margin: 10px 0px;
+  padding: 0px 2px;
+}
+
+#weather_condition {
+  margin-top: 20px;
+  height: 80px;
+  margin-left: 5px;
+}
+
+#weather_condition img {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#weather_temperature,
+#weather_wind {
+  height: 185px;
+}
+
+#weather_prediction_btn {
+  margin-top: 3px;
+  cursor: pointer;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 94, 98, 0.7),
+    rgba(255, 153, 102, 0.7)
+  );
+
+  border: 1px solid rgba(211, 211, 211, 0.6);
+}
+
+#weather_prediction_btn：hover {
+  border: 2px solid rgba(211, 211, 211, 1);
+  background: linear-gradient(
+    to right,
+    rgba(234, 47, 51, 0.7),
+    rgba(245, 117, 52, 0.7)
+  );
+}
+
+/* Prediction */
+
+#prediction {
+  display: none;
+  position: absolute;
+  top: 200px; /* Position right below the header */
+  left: calc(50% - 350px);
+  width: 700px;
+  height: 365px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 20px;
+}
+
+#dateSelect {
+  margin-top: 15px;
+  width: 180px;
+  height: 22px;
+  margin-left: 160px;
+}
+
+#prediction_btn {
+  padding: 4px 10px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 94, 98, 0.7),
+    rgba(255, 153, 102, 0.7)
+  );
+
+  border: 1px solid rgba(211, 211, 211, 0.6);
+}
+
+#prediction_btn:hover {
+  background: linear-gradient(
+    to right,
+    rgba(234, 47, 51, 0.7),
+    rgba(245, 117, 52, 0.7)
+  );
+}
+
+#prediction_chart {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+.prdiciton_b_s {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  margin: 0px;
+}
+
+/* Bike stands info popup*/
+
+#stand_info {
+  margin: 0px 5px 5px 5px;
+  font-size: 14px;
+}
+
+#stand_info h2 {
+  color: #e6713f;
+  font-size: 15px;
+}
+
+#stand_info h4 {
+  color: #007159;
+  font-size: 13px;
+  margin: 0px;
+}
+
+#stand_info img {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: 2px;
+  margin-right: -5px;
+  height: 20px;
+  width: 20px;
+}
+
+#ml_prediction_btn {
+  margin-top: 12px;
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 94, 98, 0.7),
+    rgba(255, 153, 102, 0.7)
+  );
+
+  border: 1px solid rgba(211, 211, 211, 0.6);
+}
+
+#ml_prediction_btn:hover {
+  background: linear-gradient(
+    to right,
+    rgba(234, 47, 51, 0.7),
+    rgba(245, 117, 52, 0.7)
+  );
+}
+
+/* Buttons for circles */
+
+#circle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 15px;
+  right: 170px;
+  width: 300px;
+}
+
+#circle button {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6ebbc6, #3cbca0);
+  color: white;
+  text-align: center;
+  /* line-height: 50px; */
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#circle button:hover,
+#circle button:active {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+#circle button.button-active {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+/* symbol for circles */
+
+#circle_symbol {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  padding: 5px 0px 0px 10px;
+  top: 100px;
+  left: 50px;
+  width: 100px;
+  background-color: rgba(251, 251, 251, 0.6);
+  /* border: 2px solid rgba(255, 255, 255, 1); */
+  border-radius: 8%;
+  font-size: 12px;
+  color: #373737;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.symbol {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 10px;
+}
+
+#symbol_green {
+  background-color: rgba(92, 200, 127, 0.6);
+}
+
+#symbol_yellow {
+  background-color: rgba(255, 165, 0, 0.6);
+}
+
+#symbol_red {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+#symbol_black {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* Journey Planner */
+
+#journey_planner {
+  position: absolute;
+  bottom: 15px;
+  right: 60px;
+  width: 300px;
+  /* background: linear-gradient(to right bottom, #6ebbc6, #3cbca0); */
+  background: rgb(251, 251, 251);
+  color: #4e937d;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  /* border: 3px solid #6ebbc6; */
+}
+
+#dropdown {
+  position: absolute;
+  bottom: 200px;
+  top: 450px;
+  right: 60px;
+  width: 300px;
+  background: linear-gradient(to right bottom, #6ebbc6, #3cbca0);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  color: greenyellow;
+  position: relative;
+  background-color: orange;
+  min-width: 220px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid purple;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+#journey_planner form {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+}
+
+#journey_planner label {
+  font-weight: bold;
+  text-align: left;
+}
+
+#journey_planner input[type="text"] {
+  margin-bottom: 6px;
+  margin-top: 10px;
+  padding: 5px 5px;
+  width: 200px;
+
+  border: 1px solid #383838;
+
+  border-radius: 2px;
+}
+
+#target {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#journey_planner button {
+  font-size: 13px;
+  padding: 6px;
+  margin: 4px;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(to right bottom, #6ebbc6, #3cbca0);
+  color: white;
+  cursor: pointer;
+}
+
+#button_area {
+  margin: 5px 0px 15px 0px;
+}
+
+#button_area button {
+  width: 45%;
+}
+
+#journey_planner button:hover {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+#current_location {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  margin-left: 35px;
+}
+
+.depart_arrival {
+  font-size: 13px;
+  margin: 3px;
+}
+
+#journey_planner select {
+  padding: 6px;
+  margin: 3px 3px 10px 3px;
+  font-size: 13px;
+}
+
+#title {
+  width: 300px;
+  margin: -10px -50px 0px -50px;
+}
+
+#notice {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  margin-top: 200px;
+  margin-left: 40%;
+  font-size: 13px;
+  padding: 20px;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+  background-color: rgb(250, 250, 250);
+  /* border: 1px solid #3cbca0; */
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#notice_btn {
+  padding: 3px 10px;
+  position: fixed; /* Stay in place */
+  margin-top: 15px;
+  margin-left: 110px;
+  background: linear-gradient(to right bottom, #6ebbc6, #3cbca0);
+  border: none;
+  border-radius: 2pxf;
+  color: #ffffff;
+}
