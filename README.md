@@ -54,9 +54,9 @@ dbbikes/
 
 Upon loading the website, all Dublin bike stations are displayed on the map, providing users with a clear overview of their distribution. Clicking on a station marker reveals an info box with key details, including station name and number, status, total capacity, real-time bike and stand availability, credit card support.
 
-![station1](D:\B 编程\项目\dbbikes\app\static\img\readmepic\station1.png)
+![station1](app/static/img/readmepic/station1.png)
 
-![station2](D:\B 编程\项目\dbbikes\app\static\img\readmepic\station2.png)
+![station2](app/static/img/readmepic/station2.png)
 
 
 
@@ -64,7 +64,7 @@ Upon loading the website, all Dublin bike stations are displayed on the map, pro
 
 When users click the “ML Availability Prediction” button on a selected station, the system displays bar charts forecasting the number of available bikes and stands over the next four days, helping users plan future trips.
 
-![ml](D:\B 编程\项目\dbbikes\app\static\img\readmepic\ml.png)
+![ml](app/static/img/readmepic/ml.png)
 
 
 
@@ -72,7 +72,7 @@ When users click the “ML Availability Prediction” button on a selected stati
 
 The top-left widget displays current weather conditions. Clicking it reveals 24-hour forecast charts for temperature and wind speed.
 
-![weather](D:\B 编程\项目\dbbikes\app\static\img\readmepic\weather.png)
+![weather](app/static/img/readmepic/weather.png)
 
 
 
@@ -80,9 +80,9 @@ The top-left widget displays current weather conditions. Clicking it reveals 24-
 
 Users can toggle between "Bikes Avail" and "Stands Avail" views to display the real-time availability of bikes or bike stands across all stations. Availability is represented by colored circles on the map, where size indicates quantity and color reflects availability levels. A legend in the top-left corner provides reference.
 
-![bike_distribution](D:\B 编程\项目\dbbikes\app\static\img\readmepic\bike_distribution.png)
+![bike_distribution](app/static/img/readmepic/bike_distribution.png)
 
-![stands_distribution](D:\B 编程\项目\dbbikes\app\static\img\readmepic\stands_distribution.png)
+![stands_distribution](app/static/img/readmepic/stands_distribution.png)
 
 
 
@@ -90,13 +90,13 @@ Users can toggle between "Bikes Avail" and "Stands Avail" views to display the r
 
 Users can select any two bike stations — one as the departure point and one as the destination — to generate a suggested cycling route between them. 
 
-![route](D:\B 编程\项目\dbbikes\app\static\img\readmepic\route.png)
+![route](app/static/img/readmepic/route.png)
 
 #### Personal Contributions
 
 This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system. . 
 
-##### Initial Contribution (Team Phase)
+#### - Initial Contribution (Team Phase)
 
 As a core contributor, I was responsible for the following areas:
 
@@ -107,7 +107,7 @@ As a core contributor, I was responsible for the following areas:
 
 - **Deployment & Background Services**: I deployed the application to an AWS EC2 instance and configured background services to ensure continuous data scraping and system uptime.
 
-##### Independent Extension (Post-Project)
+#### - Independent Extension (Post-Project)
 
 Following the completion and decommissioning of the initial group project, I independently revived, refined, and redeployed the system. My post-project contributions include:
 
