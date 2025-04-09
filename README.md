@@ -6,7 +6,7 @@ This project presents a comprehensive web-based system designed for Dublin’s p
 
 We first collected two months of historical data on bikes and weather conditions. The data was preprocessed and used to train models that forecast future bike and stand availability. We then developed the core application features and subsequently deployed the system on an AWS EC2 instance, with data stored and managed in an AWS RDS database. On the server, background services continuously run—scrapers fetch the latest real-time data, and a scheduled prediction module regularly updates the machine learning forecasts displayed on the website.
 
-This project was initially developed through a team collaboration and later independently restructured and redeployed. My responsibilities included full-stack development and deployment. A detailed breakdown of my contributions is provided in the final section of this document.
+This project was initially developed by a team including Sha Luo, Yanwen Yu, and Thomas Pollock. As a core contributor, I was responsible for full-stack development and deployment. The project was later independently restructured and redeployed by myself to revive the offline version. A detailed breakdown of my contributions is provided in the final section of this document.
 
 ---
 
@@ -98,7 +98,7 @@ Users can select any two bike stations — one as the departure point and one as
 
 ### Personal Contributions
 
-This project was initially developed by a team including Sha Luo, Yanwen Yu, and Thomas Pollock. As a core contributor, I was responsible for full-stack development and deployment. The project was later independently restructured and redeployed by myself to revive the offline version. A detailed breakdown of my contributions is provided in the final section of this document.
+This project was initially developed by a team including Sha Luo, Yanwen Yu, and Thomas Pollock. As a core contributor, I was responsible for full-stack development and deployment. The project was later independently restructured and redeployed by myself to revive the offline version. 
 
 #### Initial Contribution (Team Phase)
 
