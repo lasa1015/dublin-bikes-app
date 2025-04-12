@@ -6,7 +6,7 @@ This project presents a comprehensive web-based system designed for Dublin’s p
 
 We first collected two months of historical data on bikes and weather conditions. The data was preprocessed and used to train models that forecast future bike and stand availability. We then developed the core application features and subsequently deployed the system on an AWS EC2 instance, with data stored and managed in an AWS RDS database. On the server, background services continuously run—scrapers fetch the latest real-time data, and a scheduled prediction module regularly updates the machine learning forecasts displayed on the website.
 
-This project was initially developed through a team collaboration and later independently restructured and redeployed. My responsibilities included full-stack development and deployment. A detailed breakdown of my contributions is provided in the final section of this document.
+**Initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, the project was taken offline after submission. It was later independently revived, restructured, and redeployed by Sha Luo on EC2 and RDS.  As a core contributor, my responsibilities included full-stack development and deployment. A detailed breakdown of my contributions is provided in the final section of this document.**
 
 ---
 
@@ -98,7 +98,7 @@ Users can select any two bike stations — one as the departure point and one as
 
 ### Personal Contributions
 
-This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system. . 
+This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system.. 
 
 #### Initial Contribution (Team Phase)
 
