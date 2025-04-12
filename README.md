@@ -98,7 +98,7 @@ Users can select any two bike stations — one as the departure point and one as
 
 ### Personal Contributions
 
-This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system.. 
+This project was initially developed by a team of three—Sha Luo, Yanwen Yu, and Thomas Pollock—as part of an academic Agile-based collaboration, and was taken offline after submission. Following that, I independently  revived, refined, and redeployed the system. . 
 
 #### Initial Contribution (Team Phase)
 
